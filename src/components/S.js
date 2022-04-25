@@ -2,7 +2,7 @@ import react from "react";
 
 const S =() => {
     return(
-        <div>hdekjhn</div>
+        <div>Yash is Live</div>
     )
 }
 
