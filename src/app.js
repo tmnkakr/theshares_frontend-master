@@ -1,3 +1,4 @@
+import { Switch } from "@material-ui/core";
 import React from "react";
 
 import { Routes, Route } from 'react-router-dom'
@@ -31,14 +32,17 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <Routes>
-          <Route path="/"> <S /> </Route>
-          <Route path="/editor"> <EditorPage /> </Route>
-          <Route path='/panel/articleverification '> <LoginPageForArticalVerificationPanel authorizeUser={this.authorizeUser} /> </Route>
-          {/* <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
+        <Router>
+          <Switch>
+            <Route path="/"> <S /> </Route>
+            <Route path="/editor"> <EditorPage /> </Route>
+            <Route path='/panel/articleverification '> <LoginPageForArticalVerificationPanel authorizeUser={this.authorizeUser} /> </Route>
+            {/* <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
           <Route path='/panel/articleverification/articlepage' element={<ArticlePageForArticalVerificationPanel authorized={this.state.authorised} adminId={this.state.adminId} />} /> */}
 
-        </Routes>
+          </Switch>
+        </Router>
+
       </>
     );
   }
