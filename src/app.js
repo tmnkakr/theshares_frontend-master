@@ -34,7 +34,7 @@ class App extends React.Component {
         <Routes>
           <Route path='/' element={<S />} />
           <Route exact path="/editor" element={<EditorPage />} />
-          {/* <Route path='/panel/articleverification' element={<LoginPageForArticalVerificationPanel authorizeUser={this.authorizeUser} />} />
+          {/* <Route path='/panel/articleverification ' element={<LoginPageForArticalVerificationPanel authorizeUser={this.authorizeUser} />} />
           <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
           <Route path='/panel/articleverification/articlepage' element={<ArticlePageForArticalVerificationPanel authorized={this.state.authorised} adminId={this.state.adminId} />} /> */}
 
