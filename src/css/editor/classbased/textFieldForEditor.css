@@ -1,0 +1,38 @@
+.text {
+    outline:none;
+    width: 100%;
+    padding: 10px 10px;
+
+    border:1px solid #041562;
+    background-color: #EEEEEE;
+    
+    /* background-color: lightblue; */
+    margin: 0px 0px -10px 0px;
+    height:15rem;
+    overflow-y: scroll;
+    resize: none;
+  }
+  .temp {
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+  .text:focus {
+    box-shadow: 0 0 10px #719ECE;
+    border:2px solid #041562;
+    overflow-y: scroll;
+    resize: none;
+  }
+  .utilitytrayouter div{
+    visibility: hidden;
+    margin-top: 0px;
+  }
+  .utilitytrayouter:hover div{
+    background-color: silver;
+    visibility: visible;
+    
+  }
+.textfield_parent_container {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}

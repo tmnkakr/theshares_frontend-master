@@ -1,0 +1,7 @@
+.parent-container{
+    background-color: lightblue;
+    min-height: 20rem;
+    max-height: 20rem;
+    margin: 1rem auto;
+    overflow: scroll;
+}

@@ -1,0 +1,16 @@
+.material-icons.md-48 { font-size: 48px; }
+.userNameTagParent {
+    width:10px;
+    display: flex;
+    float: left;
+}
+.tagsAndDate {
+    float:  right;
+    
+}
+.btnsOfArticlepage {
+    text-align: center;
+    font-size: x-large;
+    margin: 3rem auto;
+
+}
