@@ -4,7 +4,7 @@ import { Routes } from "react-router-dom";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import EditorPage from './components/editor/classbased/editorPage'
-import LoginPageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/loginPage'
+//import LoginPageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/loginPage'
 // import HomePageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/homePage'
 // import ArticlePageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/articlePage'
 //import axios from "axios";
@@ -32,14 +32,14 @@ class App extends React.Component {
   // }
   render() {
     return (
-      <>
-        <Router>
-          <Switch>
-            <Route path='/e'>
-              <EditorPage />
-            </Route>
-          </Switch >
-          {/* <Route path='/online'>
+
+      <Router>
+        <Switch>
+          <Route path='/editor'>
+            <EditorPage />
+          </Route>
+        </Switch >
+        {/* <Route path='/online'>
             <Online/>
           </Route>
           <Route path='/skill'>
@@ -53,14 +53,11 @@ class App extends React.Component {
           </Route> */}
       </Router>
 
-         {/* <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
-          <Route path='/panel/articleverification/articlepage' element={<ArticlePageForArticalVerificationPanel authorized={this.state.authorised} adminId={this.state.adminId} />} /> */}
+      /* <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
+       <Route path='/panel/articleverification/articlepage' element={<ArticlePageForArticalVerificationPanel authorized={this.state.authorised} adminId={this.state.adminId} />} /> */
 
-      
-        
-
-      </>
-    );
+    )
   }
 }
+
 export default App;
