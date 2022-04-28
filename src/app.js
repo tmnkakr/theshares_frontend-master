@@ -35,7 +35,7 @@ class App extends React.Component {
 
       <Router>
         <Switch>
-          <Route path='/editor'>
+          <Route path='/editor'> 
             <EditorPage />
           </Route>
         </Switch >
