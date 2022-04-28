@@ -45,7 +45,7 @@ class App extends React.Component {
           <Route path='/skill'>
             <Skill/>
           </Route>
-          <Route path='/grammar'>
+          <Route path='/grammar'> 
             <Grammar/>
           </Route>
           <Route path='/vocabulary'>
