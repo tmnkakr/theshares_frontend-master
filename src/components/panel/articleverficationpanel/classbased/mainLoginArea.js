@@ -1,7 +1,7 @@
 import react from "react";
 import "../../../../css/panel/articleverificationpanel/topmostTray.css";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom';
 class MainLoginAreaForPanel extends react.Component {
   ip="43.204.60.203"
   goButtonClicked =() => {

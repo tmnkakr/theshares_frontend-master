@@ -1,13 +1,14 @@
-import { Switch } from "@material-ui/core";
+//import { Switch } from "@material-ui/core";
 import React from "react";
+import { Routes } from "react-router-dom";
 
-import { Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import EditorPage from './components/editor/classbased/editorPage'
 import LoginPageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/loginPage'
 // import HomePageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/homePage'
 // import ArticlePageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/articlePage'
 //import axios from "axios";
-import S from "./components/S";
+
 //axios.defaults.withCredentials = true
 class App extends React.Component {
   // state = {
@@ -34,14 +35,29 @@ class App extends React.Component {
       <>
         <Router>
           <Switch>
-            <Route path="/"> <S /> </Route>
-            <Route path="/editor"> <EditorPage /> </Route>
-            <Route path='/panel/articleverification '> <LoginPageForArticalVerificationPanel authorizeUser={this.authorizeUser} /> </Route>
-            {/* <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
+            <Route path='/e'>
+              <EditorPage />
+            </Route>
+          </Switch >
+          {/* <Route path='/online'>
+            <Online/>
+          </Route>
+          <Route path='/skill'>
+            <Skill/>
+          </Route>
+          <Route path='/grammar'>
+            <Grammar/>
+          </Route>
+          <Route path='/vocabulary'>
+            <Vocabulary/>
+          </Route> */}
+      </Router>
+
+         {/* <Route path='/panel/articleverification/homepage' element={<HomePageForArticalVerificationPanel authorized={this.state.authorised} />} />
           <Route path='/panel/articleverification/articlepage' element={<ArticlePageForArticalVerificationPanel authorized={this.state.authorised} adminId={this.state.adminId} />} /> */}
 
-          </Switch>
-        </Router>
+      
+        
 
       </>
     );
