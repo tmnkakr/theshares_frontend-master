@@ -1,7 +1,7 @@
 import react from "react";
 import "../../../../css/panel/articleverificationpanel/topmostTray.css";
 import axios from "axios";
-import {useNavigate} from 'react-router-dom';
+import {useHistory} from 'react-router-dom';
 class MainLoginAreaForPanel extends react.Component {
   ip="43.204.60.203"
   goButtonClicked =() => {
@@ -81,7 +81,7 @@ class MainLoginAreaForPanel extends react.Component {
 
 // Wrap and export
 export default function(props) {
-  const navigation = useNavigate();
+  const history = useHistory();
 
-  return <MainLoginAreaForPanel {...props} navigation={navigation} />;
+  return <MainLoginAreaForPanel {...props} history={history} />;
 }

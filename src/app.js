@@ -1,10 +1,11 @@
 //import { Switch } from "@material-ui/core";
 import React from "react";
-import { Routes } from "react-router-dom";
+//import { Routes } from "react-router-dom";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import EditorPage from './components/editor/classbased/editorPage'
-//import LoginPageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/loginPage'
+import NotFound from "./components/functionbased/NotFound";
+import LoginPageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/loginPage'
 // import HomePageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/homePage'
 // import ArticlePageForArticalVerificationPanel from './components/panel/articleverficationpanel/classbased/articlePage'
 //import axios from "axios";
@@ -22,7 +23,7 @@ class App extends React.Component {
   //     console.log('changed')
   //     localStorage.setItem("authorized", JSON.stringify(this.state.authorised));
   //     localStorage.setItem("adminId", JSON.stringify(this.state.adminId));
-  //   }
+  //   } 
   // }
   // authorizeUser = (authorizeState, adminId) => {
   //   this.setState({
@@ -35,9 +36,16 @@ class App extends React.Component {
 
       <Router>
         <Switch>
-          <Route path='/editor'> 
+          <Route exact path='/editor'> 
             <EditorPage />
           </Route>
+          <Route exact path='/'> 
+            <LoginPageForArticalVerificationPanel />
+          </Route>
+          <Route exact path='/404'> 
+            <NotFound />
+          </Route>
+          <Redirect to="/404" />
         </Switch >
         {/* <Route path='/online'>
             <Online/>
