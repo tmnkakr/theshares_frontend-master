@@ -36,16 +36,21 @@ class App extends React.Component {
 
       <Router>
         <Switch>
-          <Route exact path='/editor'> 
+
+          <Route path='/editor'> 
             <EditorPage />
           </Route>
-          <Route exact path='/'> 
-            <LoginPageForArticalVerificationPanel />
-          </Route>
+
           <Route exact path='/404'> 
             <NotFound />
           </Route>
+
+          <Route  path='/'> 
+            <LoginPageForArticalVerificationPanel />
+          </Route>
+
           <Redirect to="/404" />
+
         </Switch >
         {/* <Route path='/online'>
             <Online/>
